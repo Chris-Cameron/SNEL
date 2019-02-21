@@ -8,7 +8,7 @@ def new_letter(key,original):
     return chr(new_letter)
 
 #Uses new_letter and a keyword to decode a text_file that was encoded using vigenere 
-def veginere(text): 
+def vigenere(text): 
     new_message = ""
     key_letter = 0 #This variable determines the current letter that is being used in the keyword to decode the character
     for t in text:
@@ -26,6 +26,6 @@ keyword = "enigma" #The word used to decode the text file
 with open("text_files/file_30d3.txt", 'r') as f:
     content = f.read()
 
-print (veginere(content))
+print (vigenere(content))
 
 
